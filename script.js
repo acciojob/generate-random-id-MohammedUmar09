@@ -3,7 +3,7 @@ function makeid(l) {
 	let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 	let randomStr = "";
 	for(let i=0; i<l; i++){
-		let random = Math.floor(Math.round() * chars.length);
+		let random = Math.floor(Math.random() * chars.length);
 		randomStr += random;
 	}
 	return randomStr;
