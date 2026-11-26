@@ -4,7 +4,8 @@ function makeid(l) {
 	let randomStr = "";
 	for(let i=0; i<l; i++){
 		let random = Math.floor(Math.random() * chars.length);
-		randomStr += random;
+		let randomChar = chars.charAt(random);
+		randomStr += randomChar;
 	}
 	return randomStr;
 }
